@@ -64,12 +64,8 @@ button,
 label:last-child,
 footer { padding: 10px 20px }
 
-a {
-  color: var(--theme-color);
-  text-decoration: none
-}
-
 a:hover { opacity: .8 }
+img { max-width: 100% }
 
 form {
   max-width: fit-content;
