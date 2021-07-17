@@ -107,8 +107,7 @@ h2[contenteditable]:hover,
 h2[contenteditable]:focus,
 label:last-child { outline: 1px solid var(--theme-color) }
 
-button:active,
-div div:hover { transform: scale(.9) }
+button:active { transform: scale(.9) }
 
 button:focus { outline: 1px dotted var(--theme-color) }
 
