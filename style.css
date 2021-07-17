@@ -1,0 +1,143 @@
+@import 'theme.css';
+
+* { box-sizing: border-box }
+
+body {
+  color: var(--text-color);
+  background: var(--bg-color);
+  max-width: 1000px;
+  margin: auto
+}
+
+body,
+input,
+button { font: var(--font-size) var(--font) }
+
+body,
+header { padding: 20px 40px }
+
+h1,
+h2,
+p,
+input {
+  width: fit-content;
+  width: -moz-fit-content;
+  word-break: break-all;
+  margin: 10px 0
+}
+
+h2[contenteditable] { padding: 5px }
+h2[contenteditable] div:hover { transform: none }
+
+h2[contenteditable] div {
+  padding: 0;
+  border: none
+}
+
+div p { padding: 0 5px }
+
+input,
+div div { display: block }
+
+input[type='checkbox'] { display: none }
+span::before { content: 'removal mode (off)' }
+input[type='checkbox']:checked ~ span::before { content: 'removal mode (on)' }
+label:last-child { cursor: pointer }
+
+label:last-child:hover {
+  color: var(--text-color);
+  background: var(--theme-color)
+}
+
+header,
+input:focus { background: var(--theme-color) }
+
+input,
+button,
+div div,
+h2,
+a,
+label:last-child { transition: 100ms }
+
+main,
+button,
+label:last-child,
+footer { padding: 10px 20px }
+
+a {
+  color: var(--theme-color);
+  text-decoration: none
+}
+
+a:hover { opacity: .8 }
+
+form {
+  max-width: fit-content;
+  max-width: -moz-fit-content
+}
+
+input,
+button {
+  border: none;
+  outline: none
+}
+
+input {
+  display: block;
+  color: var(--text-color);
+  background: transparent;
+  max-width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid var(--theme-color)
+}
+
+button {
+  background: var(--theme-color);
+  cursor: pointer
+}
+
+button:hover,
+noscript header,
+div div,
+label:last-child { color: var(--theme-color) }
+
+button:hover,
+noscript header,
+div div { background: transparent }
+
+button:hover,
+noscript header,
+h2[contenteditable]:hover,
+h2[contenteditable]:focus,
+label:last-child { outline: 1px solid var(--theme-color) }
+
+button:active,
+div div:hover { transform: scale(.9) }
+
+button:focus { outline: 1px dotted var(--theme-color) }
+
+div {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  margin: 20px 0
+}
+
+div div {
+  padding: 10px 20px;
+  border: 1px solid var(--theme-color);
+  margin: 0;
+  cursor: pointer
+}
+
+footer { text-align: center }
+@media (max-width: 600px) { div { grid-template-columns: auto } }
+
+::selection {
+  color: var(--bg-color);
+  background: var(--text-color)
+}
+
+::-webkit-scrollbar { width: 8px }
+::-webkit-scrollbar-thumb { background: var(--theme-color) }
+::-webkit-scrollbar-track { background: transparent }
