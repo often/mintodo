@@ -1,6 +1,11 @@
+@font-face {
+  font-family: 'Manrope';
+  src: url('manrope.woff2') format('woff2')
+}
+
 :root {
-  --font-size: 16px;
-  --font: sans-serif;
+  --font-size: 18px;
+  --font: 'Manrope', sans-serif;
   --text-color: #222;
   --bg-color: #eee;
   --theme-color: #1dd1a1
