@@ -15,7 +15,5 @@ data is stored locally (in your web browser) using the [localStorage](https://de
 
 you are able to add, modify and remove to-dos in real-time.
 
-[click here for an online version](https://often.github.io/mintodo/).
-
 ## license
 [0BSD](LICENSE)
