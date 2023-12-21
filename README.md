@@ -1,7 +1,7 @@
 <div align="center">
   <img src="icon.svg" height="100px" />
   
-  # [mintodo](https://mintodo.sany.one)
+  # [mintodo](https://often.github.io/mintodo/)
   a neat and simplistic to-do list in your web browser.
 </div>
 
